@@ -1,11 +1,11 @@
 #!/bin/bash    
 HOST="159.8.4.98"
 USER="peterkur"
-PASS="RycmBRDe"
+PASS=$FTP_PASS
 FTPURL="ftp://$USER:$PASS@$HOST"
 LCD="./dist"
 RCD="/public_html/dswz.ru"
-ELETE="--delete"
+DELETE="--delete"
 lftp -c "set ftp:list-options -a;
 set ssl:check-hostname false;
 open '$FTPURL';
