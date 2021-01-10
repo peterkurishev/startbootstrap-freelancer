@@ -3,9 +3,9 @@ HOST="159.8.4.98"
 USER="peterkur"
 PASS="RycmBRDe"
 FTPURL="ftp://$USER:$PASS@$HOST"
-LCD="/home/peter/prj/startbootstrap-freelancer"
+LCD="./dist"
 RCD="/public_html/dswz.ru"
-#DELETE="--delete"
+ELETE="--delete"
 lftp -c "set ftp:list-options -a;
 set ssl:check-hostname false;
 open '$FTPURL';

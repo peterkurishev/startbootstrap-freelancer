@@ -39,7 +39,7 @@ $(function () {
                         )
                         .append("</button>");
                     $("#success > .alert-success").append(
-                        "<strong>Your message has been sent. </strong>"
+                        "<strong>Ваше сообщение было успешно отослано. Я свяжусь с вами при первой возможности!</strong>"
                     );
                     $("#success > .alert-success").append("</div>");
                     //clear all fields
